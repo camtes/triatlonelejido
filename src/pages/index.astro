@@ -1,16 +1,10 @@
 ---
-
+import Layout from "@layouts/Layout.astro";
+import SocialNetworks from "@components/SocialNetworks.astro";
+import Hero from "@components/Hero.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>C.D. Triatlón El Ejido</title>
-	</head>
-	<body class="h-screen bg-gradient-to-b from-orange-500 to-orange-400">
-		<img class="m-auto w-[500px] h-auto mt-12" src="/img/logo-white.png" alt="C.D. Triatlón El Ejido" />
-	</body>
-</html>
+<Layout title="C.D. Triatlón El Ejido">
+	<Hero />
+	<SocialNetworks />
+</Layout>
