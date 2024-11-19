@@ -1,0 +1,14 @@
+---
+interface Props {
+	label: string;
+    link: string;
+}
+
+const { label, link } = Astro.props;
+---
+
+<section>
+    <a href={link} class=`bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded m-auto`>
+        {label}
+    </>
+</section>
