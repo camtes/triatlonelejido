@@ -1,16 +1,29 @@
 ---
+const rrss = [
+    {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/triatlonejido',
+        icon: '/img/icon/fb.svg'
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/triatlonejido',
+        icon: '/img/icon/instagram.svg'
+    }
+]
 ---
 
 <section class="bg-gray-200 flex flex-row justify-between p-20 pt-4 pb-4 items-center  italic text-gray-600 font-medium">
     <p class="z-10 text-lg">Siguenos en nuestras redes sociales.</p>
     
-    <div class="flex flex-row items-center gap-8">
+    <div class="flex flex-row items-center gap-4">
         <span class="text-5xl text-gray-300 opacity-55">@triatlonejido</span>
-        <a href="https://www.facebook.com/triatlonejido" class="hover:scale-125 hover:drop-shadow-lg" target="_blank" rel="noopener noreferrer">
-            <img src="/img/icon/fb.svg" alt="Facebook" class="w-8 h-8" />
-        </a>
-        <a href="https://www.instagram.com/triatlonejido" class="hover:scale-125 hover:drop-shadow-lg" target="_blank" rel="noopener noreferrer">
-            <img src="/img/icon/instagram.svg" alt="Instagram" class="w-8 h-8" />
-        </a>
+        {
+            rrss.map((item) => (
+                <a href={item.url} class="hover:scale-125 hover:drop-shadow-lg" target="_blank" rel="noopener noreferrer">
+                    <img src={item.icon} alt={item.name} class="w-10 h-10" />
+                </a>
+            ))
+        }
     </div>
 </section>
