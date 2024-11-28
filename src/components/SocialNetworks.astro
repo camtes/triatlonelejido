@@ -13,11 +13,11 @@ const rrss = [
 ]
 ---
 
-<section class="bg-gradient-to-r from-white to-gray-200 flex flex-row justify-between pt-4 pb-4 items-center italic text-gray-600 font-medium pl-72 pr-72">
-    <p class="z-10 text-lg md:text-2xl absolute w-32 md:w-96 md:relative">Siguenos en nuestras redes sociales.</p>
+<section class="bg-gradient-to-r from-white to-gray-200 flex flex-row justify-between p-4 pt-2 pb-2 items-center italic text-gray-600 font-medium md:pl-72 md:pr-72">
+    <p class="z-10 text-md md:text-2xl p-4 md:w-96 md:relative">Siguenos en nuestras redes sociales.</p>
     
-    <div class="flex flex-row justify-between items-center gap-4">
-        <span class="text-xl md:text-5xl text-gray-300 opacity-55">@triatlonelejido</span>
+    <div class="flex flex-row items-end justify-end gap-4">
+        <!-- <span class="text-xl md:text-5xl text-gray-300 opacity-55">@triatlonelejido</span> -->
         {
             rrss.map((item) => (
                 <a href={item.url} class="hover:scale-125 hover:drop-shadow-lg" target="_blank" rel="noopener noreferrer">
