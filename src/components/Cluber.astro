@@ -14,21 +14,29 @@ const beneficios = [
 
 <section class="md:w-8/12 p-8 m-auto space-y-4 mt-8">
     <Subtitle>¿Quieres ser socio?</Subtitle>
-    <p>Nuestro club tiene por objetivo acercar a las personas interesadas en la práctica de una modalidad deportiva muy completa y saludable como es el triatlón.
+    <p>Nuestro club tiene por objetivo acercar a las personas interesadas en la práctica de una modalidad deportiva muy
+        completa y saludable como es el triatlón.
     </p>
-    <p>Para la gestión de socios usamos <a target="_blank" class="text-orange-500 hover:text-orange-700" href="https://app.cluber.es/clubes/668bb2dccc1e3394925660/portal">Cluber</a>, aunque os invitamos a que antes de daros de alta, os pongais en contacto con cualquier socio que conozcais o con la directiva a través de nuestras redes sociales. </p>
+    <p>Para la gestión de socios usamos <a target="_blank" class="text-orange-500 hover:text-orange-700"
+                                           href="https://app.cluber.es/clubes/668bb2dccc1e3394925660/portal">Cluber</a>,
+        aunque os invitamos a que antes de daros de alta, os pongais en contacto con cualquier socio que conozcais o con
+        la directiva a través de nuestras redes sociales. </p>
 
-    <p>Como socio te ofrecemos:
+    <div>
+        Como socio te ofrecemos:
         <ul class="ml-8">
             {
                 beneficios.map((item) => (
-                    <li class="list-disc">{item}</li>
+                        <li class="list-disc">{item}</li>
                 ))
             }
         </ul>
-    </p>
+    </div>
 
     <div class="flex justify-center items-center p-4">
-        <Button label="Hazte socio" link="https://app.cluber.es/clubes/668bb2dccc1e3394925660/portal" />
+        <p>Para hacerte <strong>socio</strong>, puedes ponerte en contacto con nosotros a través de las redes sociales
+            <strong>@triatlonelejido</strong> o a través de nuestro
+            email <a class="text-orange-500 hover:text-orange-700" href="mailto:triatlonejido@gmail.com">triatlonejido@gmail.com</a>
+        </p>
     </div>
 </section>
